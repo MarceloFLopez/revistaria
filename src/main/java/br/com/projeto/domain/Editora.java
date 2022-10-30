@@ -30,7 +30,7 @@ public class Editora implements Serializable {
 	@Column(length = 50, nullable = false)
 	private String nome;
 
-	@Column(unique = true, nullable = false, length = 13)
+	@Column(nullable = false, length = 13)
 	private String cnpj;
 
 	@OneToMany(mappedBy="editora", cascade=CascadeType.ALL)

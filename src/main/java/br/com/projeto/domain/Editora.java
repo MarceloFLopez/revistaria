@@ -33,6 +33,6 @@ public class Editora implements Serializable {
 	@Column(nullable = false, length = 13)
 	private String cnpj;
 
-	@OneToMany(mappedBy="editora", cascade=CascadeType.ALL)
+	@OneToMany(cascade=CascadeType.ALL)
 	private List<Revista> revistas;
 }
